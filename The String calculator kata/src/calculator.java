@@ -4,8 +4,8 @@ public class calculator
 	public int calculate(String string)
 	{
 		if(string == "")
-			return -1;
-		return -2;
+			return 0;
+		return -1;
 	}
 	
 }
