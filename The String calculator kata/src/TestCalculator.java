@@ -34,7 +34,7 @@ public class TestCalculator {
 	}
 	
 	@Test
-	public void MultipleNumbers_retrunsSum()
+	public void handleWithTwoNmubers_retrunsSum()
 	{
 		str = "1,2";
 		actual = calculator.calculate(str);
