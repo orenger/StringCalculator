@@ -1,16 +1,27 @@
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 
 public class TestCalculator {
 	
+	calculator calculator = new calculator();
+	int actual;
+	String str ;
+	
+//	@Before
+//	public void init()
+//	{
+//		calculator calculator = new calculator();
+//		
+//	}
+	
 	@Test
 	public void EmptyString_ReturnsZero() 
 	{
-		String str ="";
-		calculator calculator = new calculator();
-		int actual = calculator.calculate(str);
+		str = "";
+		actual = calculator.calculate(str); 
 		assertEquals(0, actual);
 	}
 

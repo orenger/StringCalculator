@@ -3,9 +3,10 @@ public class calculator
 {
 	public int calculate(String string)
 	{
-		if(string == "")
+		if(string.isEmpty())
 			return 0;
-		return -1;
+		else 
+			return Integer.parseInt(string);
 	}
 	
 }
