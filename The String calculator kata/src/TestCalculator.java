@@ -28,9 +28,16 @@ public class TestCalculator {
 	@Test
 	public void OneNumber_returnsTheNumber()
 	{
-		str = "1";
+		str = "2";
 		actual = calculator.calculate(str);
-		assertEquals(1, actual);
+		assertEquals(2, actual);
 	}
 	
+	@Test
+	public void MultipleNumbers_retrunsSum()
+	{
+		str = "1,2";
+		actual = calculator.calculate(str);
+		assertEquals(3, actual);
+	}
 }
