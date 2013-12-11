@@ -25,4 +25,12 @@ public class TestCalculator {
 		assertEquals(0, actual);
 	}
 
+	@Test
+	public void OneNumber_returnsTheNumber()
+	{
+		str = "1";
+		actual = calculator.calculate(str);
+		assertEquals(1, actual);
+	}
+	
 }

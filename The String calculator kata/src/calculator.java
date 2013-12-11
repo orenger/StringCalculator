@@ -6,7 +6,7 @@ public class calculator
 		if(string.isEmpty())
 			return 0;
 		else 
-			return Integer.parseInt(string);
+			return Integer.parseInt(string)-1;
 	}
 	
 }
