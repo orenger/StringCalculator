@@ -11,8 +11,12 @@ public class calculator
 				return Integer.parseInt(string);
 			//String[] str = string.split(",",-1);
 			String delims = "[,.\n?!]+";
-			String [] str = string.split(delims,-1); 
-			return calculate(str[0])+calculate(str[1]);
+			String [] str = string.split(delims,-1);
+			int sum = 0;
+			for(int i = 0 ; i<str.length ; i++ )
+				sum += calculate(str[i]);
+			return sum;
+			//return calculate(str[0])+calculate(str[1]);
 			//return calculate(Integer.parseInt(str[0]))+calculate(Integer.parseInt(str[1]));
 		}
 	}

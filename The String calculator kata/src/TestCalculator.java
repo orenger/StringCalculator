@@ -44,8 +44,8 @@ public class TestCalculator {
 	@Test
 	public void handleWithMultipleNumbers()
 	{
-		str = "1,2\n2";
+		str = "1,2\n2,0.1,2.3";
 		actual = calculator.calculate(str);
-		assertEquals(5, actual);
+		assertEquals(11, actual);
 	}
 }
