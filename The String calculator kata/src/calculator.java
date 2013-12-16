@@ -7,7 +7,8 @@ public class calculator
 			return 0;
 		else 
 		{
-			if(string.length()== 1)
+			
+			if(string.length()== 1 && string.charAt(0)>=0)
 				return Integer.parseInt(string);
 			String delims = "[,.\n?!]+";
 			String [] str = string.split(delims,-1);

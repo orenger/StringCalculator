@@ -48,4 +48,12 @@ public class TestCalculator {
 		actual = calculator.calculate(str);
 		assertEquals(11, actual);
 	}
+	
+	@Test
+	public void negativeException()
+	{
+		str = "-1\n2";
+		actual = calculator.calculate(str);
+		assertEquals(-1, actual);
+	}
 }
