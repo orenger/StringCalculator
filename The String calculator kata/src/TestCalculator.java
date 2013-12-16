@@ -52,7 +52,7 @@ public class TestCalculator {
 	@Test
 	public void negativeException()
 	{
-		str = "-1\n2";
+		str = "-1\n-2";
 		actual = calculator.calculate(str);
 		assertEquals(-1, actual);
 	}
