@@ -36,8 +36,16 @@ public class TestCalculator {
 	@Test
 	public void handleWithTwoNmubers_retrunsSum()
 	{
-		str = "1,2";
+		str = "1\n2";
 		actual = calculator.calculate(str);
 		assertEquals(3, actual);
+	}
+	
+	@Test
+	public void handleWithMultipleNumbers()
+	{
+		str = "1,2\n2";
+		actual = calculator.calculate(str);
+		assertEquals(5, actual);
 	}
 }
